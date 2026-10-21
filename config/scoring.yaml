@@ -1,0 +1,30 @@
+# Prospect score (normalized to 0-100) from klijentski_opis.txt.
+# Revenue points do not stack: the highest matching band wins.
+# Numbered tiers below follow the supplied "Prioriteti" worksheet; they are
+# separate from score bands, which express the brief's €250k-€8m sweet spot.
+revenue_bands:          # EUR, latest year available
+  - {min: 250000, max: 8000000.01, points: 40, label: "250k-8M (sweet spot)"}
+  - {min: 8000000.01, max: null, points: 30, label: ">8M"}
+  - {min: 25000, max: 250000, points: 25, label: "25k-250k"}
+unknown_revenue_points: 12   # obrti and companies without filings: neither good nor bad
+has_website: 10
+general_keywords: 10         # any general keyword on the website
+category_keywords: 10        # a keyword of the requested category on the website
+mobile_phone: 5
+email: 3
+
+# Adjustments from the client's priorities
+specialised_bonus: 7         # segment is one of BFT-Adria's core segments
+electrician_penalty: -10     # "električari nisu prioritet"
+blocked: exclude             # blocked account or bankruptcy/liquidation
+
+core_segments: [sjenila, stolarija, bravarija, garazna_vrata, zastita, distributer]
+
+# Tiers from the "Prioriteti" sheet
+tiers:
+  1: "Novi specijalizirani > 100k EUR"
+  2: "Novi generalni > 100k EUR"
+  3: "Stari kupci (inactive) > 50k EUR"
+  4: "Novi manji ≤100k EUR"
+  5: "Aktivni kupci"
+  6: "Novi, promet 0 / nepoznat / nije relevantan"

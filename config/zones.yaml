@@ -1,0 +1,38 @@
+# Sales zones (from regije.png). Towns drive Google Places searches and emajstor.hr
+# town pages; counties drive the court register search. Add or remove towns freely.
+# emajstor: town slug on emajstor.hr (lowercase, no diacritics).
+zones:
+  1:
+    name: Slavonija
+    sheet_tab: Zona 1 - Slavonija
+    counties:
+      Osječko-baranjska: [Osijek, Đakovo, Našice, Beli Manastir, Valpovo, Donji Miholjac]
+      Vukovarsko-srijemska: [Vinkovci, Vukovar, Županja, Ilok, Otok]
+      Brodsko-posavska: [Slavonski Brod, Nova Gradiška, Oriovac, Okučani]
+      Požeško-slavonska: [Požega, Pleternica, Pakrac, Lipik, Kutjevo]
+      Virovitičko-podravska: [Virovitica, Slatina, Orahovica, Pitomača]
+  2:
+    name: Sjever
+    sheet_tab: Zona 2 - Sjever
+    counties:
+      Međimurska: [Čakovec, Prelog, Mursko Središće]
+      Varaždinska: [Varaždin, Ivanec, Ludbreg, Novi Marof, Varaždinske Toplice]
+      Krapinsko-zagorska: [Krapina, Zabok, Oroslavje, Zlatar, Pregrada, Donja Stubica]
+      Koprivničko-križevačka: [Koprivnica, Križevci, Đurđevac]
+  3:
+    name: Zagreb
+    sheet_tab: Zona 3 - Zagreb
+    counties:
+      Grad Zagreb: [Zagreb, Sesvete]
+      Zagrebačka: [Velika Gorica, Samobor, Zaprešić, Dugo Selo, Sveti Ivan Zelina, Vrbovec, Ivanić-Grad, Jastrebarsko]
+  4:
+    name: Centar
+    sheet_tab: Zona 4 - Centar
+    counties:
+      Bjelovarsko-bilogorska: [Bjelovar, Daruvar, Garešnica, Čazma, Grubišno Polje]
+      Sisačko-moslavačka: [Sisak, Kutina, Petrinja, Novska, Glina, Popovača]
+  5:
+    name: Karlovac
+    sheet_tab: Zona 5 - Karlovac
+    counties:
+      Karlovačka: [Karlovac, Ogulin, Duga Resa, Slunj, Ozalj]

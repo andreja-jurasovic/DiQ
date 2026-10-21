@@ -1,0 +1,23 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+secrets/
+
+# Local Python/runtime state
+.venv/
+__pycache__/
+*.py[cod]
+cache/
+
+# Generated or client-specific data
+output/
+data/
+customers.csv
+*.log
+
+# Local/client reference material
+.DS_Store
+regije.png
+Kategorije informacija 210926.xlsx
+klijentski_opis.txt

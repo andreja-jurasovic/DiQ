@@ -1,0 +1,69 @@
+# Product categories BFT-Adria sells into. Each one says where to look for prospects:
+#   places:   Google search phrases, combined with every town of the zone ("rolete Osijek")
+#   emajstor: emajstor.hr directory slugs (https://www.emajstor.hr/imenik/<slug>/<town>)
+#   nkd:      NKD 2007 main-activity codes in the court register
+#   register_name: stems searched in full registered company names
+#   site_keywords: category-specific words looked for on the prospect's website (PRIO 4)
+categories:
+  rolete:
+    label: Rolete i sjenila
+    brands: [Somfy, SIMU]
+    places: [rolete, roletar, žaluzine]
+    emajstor: [tende_markize]
+    nkd: ["43.32"]
+    register_name: [rolet, žaluzin, sjenil]
+    site_keywords: [roleta, rolete, žaluzine, venecijaneri, rolo zavjese, komarnici, sjenila, screen]
+  tende:
+    label: Tende i pergole
+    brands: [Somfy]
+    places: [tende, pergole]
+    emajstor: [tende_markize]
+    nkd: []
+    register_name: [tende, pergol, sjenil]
+    site_keywords: [tende, tenda, pergola, pergole, bioklimatske, markize, senzor vjetra]
+  stolarija:
+    label: PVC/ALU stolarija
+    brands: [Somfy, SIMU]
+    places: [pvc stolarija, alu stolarija]
+    emajstor: [pvc_prozori, prozori]
+    nkd: ["22.23", "25.12", "16.23", "43.32"]
+    register_name: [stolarij, prozor]
+    site_keywords: [pvc stolarija, alu stolarija, prozori, rolete, žaluzine, ugradnja]
+  garazna_vrata:
+    label: Garažna vrata
+    brands: [Somfy, BFT]
+    places: [garažna vrata]
+    emajstor: [garazna_vrata]
+    nkd: ["25.12"]
+    register_name: [garažn, "garazn"]
+    site_keywords: [garažna vrata, sekcijska vrata, rolo vrata, stropni motor, industrijska vrata]
+  dvorisna_vrata:
+    label: Dvorišna vrata, ograde, bravarija
+    brands: [BFT, Somfy]
+    places: [bravarija, ograde, klizna vrata]
+    emajstor: [celicarstvo]
+    nkd: ["25.11", "25.12"]
+    register_name: [bravar, ograd, kovan]
+    site_keywords: [klizna vrata, krilna vrata, dvorišna vrata, ograde, ograda, kapija, rampe, automatika]
+  zastita:
+    label: Tehnička zaštita
+    brands: [BFT]
+    places: [tehnička zaštita, alarmni sustavi]
+    emajstor: []
+    nkd: ["80.20"]
+    register_name: [zaštit, ZAŠTIT, alarm, sigurnosn]
+    site_keywords: [video nadzor, alarm, kontrola pristupa, rampe, automatika vrata]
+  distributeri:
+    label: Distributeri / veleprodaja
+    brands: [Somfy, BFT, SIMU]
+    places: [veleprodaja okova, veleprodaja automatike za vrata]
+    emajstor: []
+    nkd: ["46.73", "46.74", "46.90"]
+    register_name: [veleprodaj, okov]
+    site_keywords: [veleprodaja, distributer, okovi, motori, automatika]
+
+# Words that show a company works in BFT-Adria's space at all (PRIO 4, general).
+general_site_keywords: [motor, elektromotor, sjenila, automatika, prozori, ograda, pristup, roleta, rolete, daljinski]
+
+# Competitor brands to recognize and report during qualification.
+competitor_brands: [Nice, Came, FAAC, Hörmann, Hormann, Marantec, Sommer, Becker, Alutech, Beninca, Roger, Cardin, Selve, Gaposa, Mottura]
